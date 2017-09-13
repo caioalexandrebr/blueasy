@@ -1,0 +1,146 @@
+
+@base-url: "";
+@white: #FFFFFF;
+@black: #000000;
+@colorprimary: #4bcaff;
+@colorsecondary: #3f4a51;
+
+@family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+header {
+    display: table;
+    width: 100%;
+    height: 800px;
+    background: url('@{base-url}/src/img/header-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .nav-header {
+        width: 100%;
+        height: 150px;
+        background-color: @colorsecondary;
+        .container {
+            nav {
+                ul.logo {
+                    float: left;
+                }
+                ul.menu {
+                    float: right;
+                    li {
+                        display: inline;
+                        .active {
+                            padding: 6px 14px;
+                            display: inline-block;
+                            color: @colorprimary;
+                            font-weight: 700;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            border: 2px solid @colorprimary;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        }
+                        a {
+                            padding: 6px 14px;
+                            display: inline-block;
+                            color: @white;
+                            font-weight: 700;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            border: 2px solid transparent;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            &:hover {
+                                color: @colorprimary;
+                                border: 2px solid @colorprimary
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    .header-footer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        height: 650px;
+        width: 100%;
+        h1 {
+            padding: 5px;
+            background-color: @colorsecondary;
+            color: @white;
+            font-size: 42px;
+            font-weight: 100;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: @family;
+        }
+        h2 {
+            padding: 5px;
+            background-color: @colorsecondary;
+            color: @white;
+            font-size: 42px;
+            font-weight: 100;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: @family;
+        }
+    }
+}
+
+#services {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: @colorprimary;
+    .service-title {
+        margin-bottom: 36px;
+        h1 {
+            color: @white;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 24px;
+            font-family: @family;
+            text-transform: uppercase;
+        }
+        .div {
+            width: 46px;
+            height: 2px;
+            background-color: @white;
+        }
+    }
+    .service-area {
+        .coffee {
+            background: url('@{base-url}/src/img/coffee.png');
+        }
+        .instant {
+            background: url('@{base-url}/src/img/instant.png');
+        }
+        .serious {
+            background: url('@{base-url}/src/img/serious.png');
+        }
+        .frame {
+            background: url('@{base-url}/src/img/frame.png');
+        }
+        .service-ico {
+            width: 48px;
+            height: 48px;
+        }
+        h1 {
+            color: @white;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: @family;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: @white;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            font-family: @family;;
+        }
+    }
+}

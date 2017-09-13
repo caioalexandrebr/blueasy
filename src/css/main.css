@@ -1,0 +1,130 @@
+header {
+  display: table;
+  width: 100%;
+  height: 800px;
+  background: url('/src/img/header-bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .nav-header {
+  width: 100%;
+  height: 150px;
+  background-color: #3f4a51;
+}
+header .nav-header .container nav ul.logo {
+  float: left;
+}
+header .nav-header .container nav ul.menu {
+  float: right;
+}
+header .nav-header .container nav ul.menu li {
+  display: inline;
+}
+header .nav-header .container nav ul.menu li .active {
+  padding: 6px 14px;
+  display: inline-block;
+  color: #4bcaff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #4bcaff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .nav-header .container nav ul.menu li a {
+  padding: 6px 14px;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .nav-header .container nav ul.menu li a:hover {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+}
+header .header-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  width: 100%;
+}
+header .header-footer h1 {
+  padding: 5px;
+  background-color: #3f4a51;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .header-footer h2 {
+  padding: 5px;
+  background-color: #3f4a51;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  background-color: #4bcaff;
+}
+#services .service-title {
+  margin-bottom: 36px;
+}
+#services .service-title h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+#services .service-title .div {
+  width: 46px;
+  height: 2px;
+  background-color: #ffffff;
+}
+#services .service-area .coffee {
+  background: url('/src/img/coffee.png');
+}
+#services .service-area .instant {
+  background: url('/src/img/instant.png');
+}
+#services .service-area .serious {
+  background: url('/src/img/serious.png');
+}
+#services .service-area .frame {
+  background: url('/src/img/frame.png');
+}
+#services .service-area .service-ico {
+  width: 48px;
+  height: 48px;
+}
+#services .service-area h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+#services .service-area h2 {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
