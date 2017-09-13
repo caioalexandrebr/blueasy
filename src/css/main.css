@@ -1,29 +1,56 @@
 header {
   width: 100%;
   height: 800px;
-}
-header section.header {
   background: url('/src/img/header-bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-header section.header .nav-header {
+header .nav-fixed {
+  top: 0;
+  z-index: 99;
+  position: fixed;
+}
+header nav#nav-header {
   width: 100%;
   height: 150px;
   background-color: #3f4a51;
 }
-header section.header .nav-header .container nav ul.logo {
+header nav#nav-header .nav-header-center {
+  width: 100%;
+  height: 150px;
+  background-color: #3f4a51;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav#nav-header .nav-header-center ul.logo {
   float: left;
 }
-header section.header .nav-header .container nav ul.menu {
+header nav#nav-header .nav-header-center ul.logo li {
+  list-style: none;
+}
+header nav#nav-header .nav-header-center ul.logo li a {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav#nav-header .nav-header-center ul.menu {
   float: right;
 }
-header section.header .nav-header .container nav ul.menu li {
+header nav#nav-header .nav-header-center ul.menu li {
   display: inline;
 }
-header section.header .nav-header .container nav ul.menu li .active {
+header nav#nav-header .nav-header-center ul.menu li .active {
   padding: 6px 14px;
   display: inline-block;
   color: #4bcaff;
@@ -33,7 +60,7 @@ header section.header .nav-header .container nav ul.menu li .active {
   border: 2px solid #4bcaff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header section.header .nav-header .container nav ul.menu li a {
+header nav#nav-header .nav-header-center ul.menu li a {
   padding: 6px 14px;
   display: inline-block;
   color: #ffffff;
@@ -43,13 +70,13 @@ header section.header .nav-header .container nav ul.menu li a {
   border: 2px solid transparent;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header section.header .nav-header .container nav ul.menu li a:hover {
+header nav#nav-header .nav-header-center ul.menu li a:hover {
   color: #4bcaff;
   border: 2px solid #4bcaff;
 }
-header section.header .header-footer {
-  display: -webkit-box;
+header .header-footer {
   display: -moz-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -58,7 +85,7 @@ header section.header .header-footer {
   height: 650px;
   width: 100%;
 }
-header section.header .header-footer h1 {
+header .header-footer h1 {
   padding: 5px;
   background-color: #3f4a51;
   color: #ffffff;
@@ -68,7 +95,7 @@ header section.header .header-footer h1 {
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header section.header .header-footer h2 {
+header .header-footer h2 {
   padding: 5px;
   background-color: #3f4a51;
   color: #ffffff;
