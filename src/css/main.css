@@ -1,28 +1,29 @@
 header {
-  display: table;
   width: 100%;
   height: 800px;
+}
+header section.header {
   background: url('/src/img/header-bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-header .nav-header {
+header section.header .nav-header {
   width: 100%;
   height: 150px;
   background-color: #3f4a51;
 }
-header .nav-header .container nav ul.logo {
+header section.header .nav-header .container nav ul.logo {
   float: left;
 }
-header .nav-header .container nav ul.menu {
+header section.header .nav-header .container nav ul.menu {
   float: right;
 }
-header .nav-header .container nav ul.menu li {
+header section.header .nav-header .container nav ul.menu li {
   display: inline;
 }
-header .nav-header .container nav ul.menu li .active {
+header section.header .nav-header .container nav ul.menu li .active {
   padding: 6px 14px;
   display: inline-block;
   color: #4bcaff;
@@ -32,7 +33,7 @@ header .nav-header .container nav ul.menu li .active {
   border: 2px solid #4bcaff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header .nav-header .container nav ul.menu li a {
+header section.header .nav-header .container nav ul.menu li a {
   padding: 6px 14px;
   display: inline-block;
   color: #ffffff;
@@ -42,11 +43,11 @@ header .nav-header .container nav ul.menu li a {
   border: 2px solid transparent;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header .nav-header .container nav ul.menu li a:hover {
+header section.header .nav-header .container nav ul.menu li a:hover {
   color: #4bcaff;
   border: 2px solid #4bcaff;
 }
-header .header-footer {
+header section.header .header-footer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -57,7 +58,7 @@ header .header-footer {
   height: 650px;
   width: 100%;
 }
-header .header-footer h1 {
+header section.header .header-footer h1 {
   padding: 5px;
   background-color: #3f4a51;
   color: #ffffff;
@@ -67,7 +68,7 @@ header .header-footer h1 {
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header .header-footer h2 {
+header section.header .header-footer h2 {
   padding: 5px;
   background-color: #3f4a51;
   color: #ffffff;
