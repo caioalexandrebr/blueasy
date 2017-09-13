@@ -178,3 +178,43 @@ section#movie {
         }
     }
 }
+
+section#whois {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background: url('@{base-url}/src/img/whois-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .whois-left {
+        h1 {
+            color: @white;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            font-family: @family;
+        }
+    }
+    .whois-right {
+        h1 {
+            color: @white;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            font-family: @family;
+        }
+        button {
+            border-radius: 0;
+            padding: 16px 18px;
+            margin-right: 20px;
+            border: 2px solid @white;
+            background-color: transparent;
+            color: @white;
+            &:hover {
+                border: 2px solid @colorprimary;
+                background-color: @colorprimary;
+            }
+        }
+    }
+}

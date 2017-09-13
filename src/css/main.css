@@ -156,3 +156,38 @@ section#movie .movie-left button:hover {
   background-color: #ffffff;
   border: 2px solid #ffffff;
 }
+section#whois {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  background: url('/src/img/whois-bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#whois .whois-left h1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#whois .whois-right h1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#whois .whois-right button {
+  border-radius: 0;
+  padding: 16px 18px;
+  margin-right: 20px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+section#whois .whois-right button:hover {
+  border: 2px solid #4bcaff;
+  background-color: #4bcaff;
+}
