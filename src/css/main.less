@@ -4,6 +4,8 @@
 @black: #000000;
 @colorprimary: #4bcaff;
 @colorsecondary: #3f4a51;
+@movie: #515f67;
+@color1: #353f46;
 
 @family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -91,26 +93,27 @@ header {
     }
 }
 
-#services {
+.section-title {
+    margin-bottom: 36px;
+    h1 {
+        color: @white;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 24px;
+        font-family: @family;
+        text-transform: uppercase;
+    }
+    .div {
+        width: 46px;
+        height: 2px;
+        background-color: @white;
+    }
+}
+
+section#services {
     width: 100%;
     padding: 60px 0 60px 0;
     background-color: @colorprimary;
-    .service-title {
-        margin-bottom: 36px;
-        h1 {
-            color: @white;
-            font-size: 30px;
-            font-weight: 300;
-            line-height: 24px;
-            font-family: @family;
-            text-transform: uppercase;
-        }
-        .div {
-            width: 46px;
-            height: 2px;
-            background-color: @white;
-        }
-    }
     .service-area {
         .coffee {
             background: url('@{base-url}/src/img/coffee.png');
@@ -140,7 +143,38 @@ header {
             font-size: 12px;
             font-weight: 600;
             line-height: 18px;
-            font-family: @family;;
+            font-family: @family;
+        }
+    }
+}
+
+section#movie {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: @movie;
+    .movie-left {
+        h2 {
+            color: @white;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            font-family: @family;
+        }
+        button {
+            border-radius: 0;
+            border: 2px solid @color1;
+            padding: 10px 40px 10px 40px;
+            background-color: transparent;
+            color: @color1;
+            font-weight: 700;
+            font-family: @family;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                color: @color1;
+                background-color: @white;
+                border: 2px solid @white;
+            }
         }
     }
 }

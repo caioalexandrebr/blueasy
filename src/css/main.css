@@ -77,15 +77,10 @@ header .header-footer h2 {
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#services {
-  width: 100%;
-  padding: 60px 0 60px 0;
-  background-color: #4bcaff;
-}
-#services .service-title {
+.section-title {
   margin-bottom: 36px;
 }
-#services .service-title h1 {
+.section-title h1 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 300;
@@ -93,38 +88,71 @@ header .header-footer h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-#services .service-title .div {
+.section-title .div {
   width: 46px;
   height: 2px;
   background-color: #ffffff;
 }
-#services .service-area .coffee {
+section#services {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  background-color: #4bcaff;
+}
+section#services .service-area .coffee {
   background: url('/src/img/coffee.png');
 }
-#services .service-area .instant {
+section#services .service-area .instant {
   background: url('/src/img/instant.png');
 }
-#services .service-area .serious {
+section#services .service-area .serious {
   background: url('/src/img/serious.png');
 }
-#services .service-area .frame {
+section#services .service-area .frame {
   background: url('/src/img/frame.png');
 }
-#services .service-area .service-ico {
+section#services .service-area .service-ico {
   width: 48px;
   height: 48px;
 }
-#services .service-area h1 {
+section#services .service-area h1 {
   color: #ffffff;
   font-size: 24px;
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-#services .service-area h2 {
+section#services .service-area h2 {
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#movie {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  background-color: #515f67;
+}
+section#movie .movie-left h2 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#movie .movie-left button {
+  border-radius: 0;
+  border: 2px solid #353f46;
+  padding: 10px 40px 10px 40px;
+  background-color: transparent;
+  color: #353f46;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section#movie .movie-left button:hover {
+  color: #353f46;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
