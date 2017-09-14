@@ -11,36 +11,38 @@
 </head>
 <body>   
 
-    <header data-speed="6" data-type="background">
-        <nav id="nav-header">
+    <section id="home">
+        <header data-speed="6" data-type="background">
+            <div id="nav-header-area">
+                <nav id="nav-header">
+                    <div class="container">
+                        <div class="nav-header-center">
+                            <ul class="logo">
+                                <li>
+                                    <a href="">Blu<font style="color: #4bcaff;">e</font>asy</a>
+                                </li>
+                            </ul>
+                            <ul class="menu">
+                                <li><a href="#home" class="active">Home</li></a>
+                                <li><a href="#services">Services</li></a>
+                                <li><a href="#whois">Features</li></a>
+                                <li><a href="#">Portfolio</li></a>
+                                <li><a href="#">Contact</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
             <div class="container">
-                <div class="nav-header-center">
-                    <ul class="logo">
-                        <li>
-                            <a href="">Blu<font style="color: #4bcaff;">e</font>asy</a>
-                        </li>
-                    </ul>
-                    <ul class="menu">
-                        <li><a href="#" class="active">Home</li></a>
-                        <li><a href="#services">Services</li></a>
-                        <li><a href="#whois">Features</li></a>
-                        <li><a href="#">Portfolio</li></a>
-                        <li><a href="#">Contact</li></a>
-                    </ul>
+                <div class="header-footer">
+                    <div class="header-text">
+                        <h1>“I’m looking for the unexpected.</h1>
+                        <h2>I’m looking for things I’ve never seen before.”</h2>
+                    </div>
                 </div>
             </div>
-        </nav>
-        
-        <div class="container">
-            <div class="header-footer">
-                <div class="header-text">
-                    <h1>“I’m looking for the unexpected.</h1>
-                    <h2>I’m looking for things I’ve never seen before.”</h2>
-                </div>
-            </div>
-        </div>
-
-    </header>
+        </header>
+    </section>
 
     <div ng-include="'view/portfolio.html'"></div>
 
@@ -60,7 +62,7 @@
 <!-- menu active scroll -->
 <script src="src/js/menuActive.js"></script>
 <!-- background parallax -->
-<script src="src/js/menuActive.js"></script>
+<script src="src/js/parallax.js"></script>
 
 <script>
 		$(function(){   
