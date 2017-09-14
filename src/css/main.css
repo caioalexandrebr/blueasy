@@ -121,17 +121,27 @@ header .header-footer h2 {
   margin-bottom: 36px;
 }
 .section-title h1 {
-  color: #ffffff;
   font-size: 30px;
   font-weight: 300;
   line-height: 24px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
-.section-title .div {
+.section-title .white-h1 {
+  color: #ffffff;
+}
+.section-title .white-div {
   width: 46px;
   height: 2px;
   background-color: #ffffff;
+}
+.section-title .black-h1 {
+  color: #3f4a51;
+}
+.section-title .black-div {
+  width: 46px;
+  height: 2px;
+  background-color: #3f4a51;
 }
 section#services {
   width: 100%;
@@ -269,4 +279,50 @@ section#portfolio .cap2 {
   left: 100%;
   padding: 10px;
   transition: all .5s;
+}
+section#feedback {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  background-color: #4bcaff;
+}
+section#feedback .feedback-twitter {
+  float: right;
+  border-radius: 0;
+  padding: 4px 4px;
+  background-color: transparent;
+  color: #ffffff;
+}
+section#feedback blockquote {
+  border-left: none;
+}
+section#feedback .quote-box {
+  overflow: hidden;
+  margin-top: -50px;
+  padding-top: -100px;
+  border-radius: 17px;
+  background-color: #3fb6e8;
+  margin-top: 25px;
+  color: white;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px #2f95c0;
+}
+section#feedback .quote-box .quotation-mark {
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+section#feedback .quote-box .quote-text {
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: -65px;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#feedback .quote-box .quote-text strong {
+  font-weight: 600;
+}
+section#feedback .quote-box .quote-badge {
+  background-color: rgba(0, 0, 0, 0.2);
 }

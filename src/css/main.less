@@ -136,17 +136,27 @@ header {
 .section-title {
     margin-bottom: 36px;
     h1 {
-        color: @white;
         font-size: 30px;
         font-weight: 300;
         line-height: 24px;
         font-family: @family;
         text-transform: uppercase;
     }
-    .div {
+    .white-h1 {
+        color: @white;
+    }
+    .white-div {
         width: 46px;
         height: 2px;
         background-color: @white;
+    }
+    .black-h1 {
+        color: @colorsecondary;
+    }
+    .black-div {
+        width: 46px;
+        height: 2px;
+        background-color: @colorsecondary;
     }
 }
 
@@ -308,5 +318,56 @@ section#portfolio {
         padding:10px;
         
         transition: all .5s;
+    }
+}
+
+
+section#feedback {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: @colorprimary;
+    
+    .feedback-twitter {
+        float: right;
+        border-radius: 0;
+        padding: 4px 4px;
+        background-color: transparent;
+        color: @white;
+    }
+    blockquote{
+        border-left:none;
+    }
+    .quote-box{
+        overflow: hidden;
+        margin-top: -50px;
+        padding-top: -100px;
+        border-radius: 17px;
+        background-color: #3fb6e8;
+        margin-top: 25px;
+        color:white;
+        width: 100%;
+        box-shadow: 2px 2px 2px 2px #2f95c0;
+        .quotation-mark{
+            margin-top: -10px;
+            font-weight: bold;
+            font-size:100px;
+            color:white;
+            font-family: "Times New Roman", Georgia, Serif;
+            
+        }
+        .quote-text{
+            color: @white;
+            font-size: 28px;
+            margin-top: -65px;
+            font-weight: 300;
+            font-family: @family;
+            strong {
+                font-weight: 600;
+            }
+        }
+        
+        .quote-badge{
+            background-color: rgba(0, 0, 0, 0.2);   
+        }
     }
 }
