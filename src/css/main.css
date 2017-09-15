@@ -201,6 +201,9 @@ section#movie .movie-left button {
   text-decoration: none;
   text-transform: uppercase;
 }
+section#movie .movie-left button:focus {
+  box-shadow: inset 0 0 0 0;
+}
 section#movie .movie-left button:hover {
   color: #353f46;
   background-color: #ffffff;
@@ -237,6 +240,9 @@ section#whois .whois-right button {
   background-color: transparent;
   color: #ffffff;
 }
+section#whois .whois-right button:focus {
+  box-shadow: inset 0 0 0 0;
+}
 section#whois .whois-right button:hover {
   border: 2px solid #4bcaff;
   background-color: #4bcaff;
@@ -245,6 +251,30 @@ section#portfolio {
   width: 100%;
   padding: 60px 0 60px 0;
   background-color: #ffffff;
+}
+section#portfolio .portfolio-bt {
+  float: right;
+}
+section#portfolio .portfolio-bt button {
+  margin-left: 30px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #3f4a51;
+  text-transform: uppercase;
+}
+section#portfolio .portfolio-bt button:hover {
+  border-radius: 0;
+  color: #3f4a51;
+  border: 2px solid #3f4a51;
+}
+section#portfolio .portfolio-bt button:focus {
+  border-radius: 0;
+  color: #4bcaff;
+  box-shadow: inset 0 0 0 0;
+  border: 2px solid #4bcaff;
 }
 section#portfolio .port-image {
   width: 100%;
