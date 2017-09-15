@@ -7,6 +7,8 @@
 @movie: #515f67;
 @color1: #353f46;
 
+@bold: 700;
+@light: 300;
 @family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 header {
@@ -381,6 +383,34 @@ section#contact {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    h1 {
+        color: @white;
+        font-size: 14px;
+        font-weight: @bold;
+        font-family: @family;
+        text-transform: uppercase;
+    }
+    .contact-input {
+        color: @white;
+        font-size: 18px;
+        font-weight: @bold;
+        font-family: @family;
+
+        height: 60px;
+        border-radius: 0;
+        border: 2px solid @white;
+        background-color: transparent;
+        &:focus {
+            color: @colorsecondary;
+            background-color: @white;
+            border: 2px solid @white;
+        }
+    }
+    .message {
+        max-width: 100%;
+        min-height: 220px;
+        max-height: 420px;
+    }
 }
 
 

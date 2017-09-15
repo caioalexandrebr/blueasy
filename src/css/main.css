@@ -335,6 +335,33 @@ section#contact {
   -o-background-size: cover;
   background-size: cover;
 }
+section#contact h1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+section#contact .contact-input {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 60px;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+section#contact .contact-input:focus {
+  color: #3f4a51;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+section#contact .message {
+  max-width: 100%;
+  min-height: 220px;
+  max-height: 420px;
+}
 footer {
   width: 100%;
   height: 170px;
