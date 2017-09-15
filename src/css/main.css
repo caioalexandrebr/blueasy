@@ -287,28 +287,31 @@ section#portfolio .each-item {
   overflow: hidden;
 }
 section#portfolio .each-item:hover .cap2,
-section#portfolio .each-item:hover .cap1 {
+section#portfolio .each-item:hover .box-hover {
   left: 0px;
 }
-section#portfolio .cap1 {
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  background: rgba(255, 255, 255, 0.5);
+section#portfolio .box-hover {
   top: 0px;
   left: -100%;
-  padding: 10px;
-  transition: all .5s;
-}
-section#portfolio .cap2 {
-  position: absolute;
   width: 100%;
-  height: 30%;
-  background: rgba(0, 178, 255, 0.5);
-  bottom: 0px;
-  left: 100%;
-  padding: 10px;
-  transition: all .5s;
+  height: 100%;
+  position: absolute;
+  background: rgba(53, 63, 71, 0.9);
+  transition: all .2s;
+}
+section#portfolio .box-hover .zoom {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -18px;
+  width: 36px;
+  height: 50px;
+}
+section#portfolio .box-hover .zoom span {
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 48px;
 }
 section#feedback {
   width: 100%;
@@ -328,8 +331,8 @@ section#feedback blockquote {
 section#feedback .quote-box {
   overflow: hidden;
   margin-top: -50px;
+  border-radius: 8px;
   padding-top: -100px;
-  border-radius: 17px;
   background-color: #3fb6e8;
   margin-top: 25px;
   color: white;
