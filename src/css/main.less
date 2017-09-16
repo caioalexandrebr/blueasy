@@ -133,23 +133,19 @@ header {
 
 .section-title {
     margin-bottom: 36px;
-    h1 {
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 24px;
-        font-family: @family;
-        text-transform: uppercase;
-    }
-    .white-h1 {
-        color: @white;
+    color: @white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    font-family: @family;
+    text-transform: uppercase;
+    .text-black {
+        color: @colorsecondary;
     }
     .white-div {
         width: 46px;
         height: 2px;
         background-color: @white;
-    }
-    .black-h1 {
-        color: @colorsecondary;
     }
     .black-div {
         width: 46px;
@@ -406,6 +402,13 @@ section#contact {
         font-family: @family;
         text-transform: uppercase;
     }
+    p {
+        color: @white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        font-family: @family;
+    }
     .contact-input {
         color: @white;
         font-size: 18px;
@@ -426,6 +429,26 @@ section#contact {
         max-width: 100%;
         min-height: 220px;
         max-height: 420px;
+    }
+    button {
+        border-radius: 0;
+        border: 2px solid @colorprimary;
+        padding: 10px 0 10px 0;
+        width: 100%;
+        background-color: @colorprimary;
+        color: @white;
+        font-weight: 700;
+        font-family: @family;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:focus {
+            box-shadow: inset 0 0 0 0;
+        }
+        &:hover {
+            color: @color1;
+            background-color: @white;
+            border: 2px solid @white;
+        }
     }
 }
 
