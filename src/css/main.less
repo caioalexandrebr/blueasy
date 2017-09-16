@@ -24,16 +24,12 @@ header {
         height: 150px;
     }
     .nav-fixed {
-        width: 100%;
         height: 75px !important;
         display: -moz-box !important;
         display: -webkit-box !important;
         display: -ms-flexbox !important;
         display: -webkit-flex !important;
-        display: flex !important;
         align-items:center !important;
-        justify-content:center !important;
-
         top: 0;
         z-index: 99;
         position: fixed;
@@ -50,17 +46,16 @@ header {
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            align-items:center;
-            justify-content:center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
             ul.logo {
-                float: left;
                 li {
                     list-style: none;
                     a {
                         color: @white;
                         font-size: 30px;
                         font-weight: 700;
-                        line-height: 30px;
                         font-family: @family;
                         text-decoration: none;
                         text-transform: uppercase;
@@ -68,28 +63,28 @@ header {
                 }
             }
             ul.menu {
-                float: right;
+                display: flex;
+                flex-direction: row;
                 li {
-                    display: inline;
+                    list-style: none;
+                    margin-left: 30px;
                     .active {
                         padding: 6px 14px;
-                        display: inline-block;
-                        color: @colorprimary;
                         font-weight: 700;
+                        font-family: @family;
+                        color: @colorprimary;
                         text-decoration: none;
                         text-transform: uppercase;
                         border: 2px solid @colorprimary;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     }
                     a {
                         padding: 6px 14px;
-                        display: inline-block;
                         color: @white;
                         font-weight: 700;
+                        font-family: @family;
                         text-decoration: none;
                         text-transform: uppercase;
-                        border: 2px solid transparent;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        border: 2px solid transparent;    
                         &:hover {
                             color: @colorprimary;
                             border: 2px solid @colorprimary
@@ -100,15 +95,15 @@ header {
         }
     }
 
-
     .header-footer {
         display: -moz-box;
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         height: 650px;
         width: 100%;
         h1 {
@@ -118,8 +113,8 @@ header {
             font-size: 42px;
             font-weight: 100;
             text-align: center;
-            text-transform: uppercase;
             font-family: @family;
+            text-transform: uppercase;
         }
         h2 {
             padding: 5px;
@@ -128,11 +123,10 @@ header {
             font-size: 42px;
             font-weight: 100;
             text-align: center;
-            text-transform: uppercase;
             font-family: @family;
+            text-transform: uppercase;
         }
     }
-    
 }
 
 .section-title {
@@ -277,8 +271,6 @@ section#whois {
     }
 }
 
-
-
 section#portfolio {
     width: 100%;
     padding: 60px 0 60px 0;
@@ -348,7 +340,6 @@ section#portfolio {
         }
     }
 }
-
 
 section#feedback {
     width: 100%;

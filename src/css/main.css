@@ -12,15 +12,12 @@ header #nav-header-area {
   height: 150px;
 }
 header .nav-fixed {
-  width: 100%;
   height: 75px !important;
   display: -moz-box !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: -webkit-flex !important;
-  display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
   top: 0;
   z-index: 99;
   position: fixed;
@@ -39,10 +36,8 @@ header nav#nav-header .nav-header-center {
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-header nav#nav-header .nav-header-center ul.logo {
-  float: left;
+  flex-direction: row;
+  justify-content: space-between;
 }
 header nav#nav-header .nav-header-center ul.logo li {
   list-style: none;
@@ -51,36 +46,35 @@ header nav#nav-header .nav-header-center ul.logo li a {
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
 header nav#nav-header .nav-header-center ul.menu {
-  float: right;
+  display: flex;
+  flex-direction: row;
 }
 header nav#nav-header .nav-header-center ul.menu li {
-  display: inline;
+  list-style: none;
+  margin-left: 30px;
 }
 header nav#nav-header .nav-header-center ul.menu li .active {
   padding: 6px 14px;
-  display: inline-block;
-  color: #4bcaff;
   font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4bcaff;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #4bcaff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header nav#nav-header .nav-header-center ul.menu li a {
   padding: 6px 14px;
-  display: inline-block;
   color: #ffffff;
   font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid transparent;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header nav#nav-header .nav-header-center ul.menu li a:hover {
   color: #4bcaff;
@@ -93,6 +87,7 @@ header .header-footer {
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   height: 650px;
   width: 100%;
@@ -104,8 +99,8 @@ header .header-footer h1 {
   font-size: 42px;
   font-weight: 100;
   text-align: center;
-  text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 header .header-footer h2 {
   padding: 5px;
@@ -114,8 +109,8 @@ header .header-footer h2 {
   font-size: 42px;
   font-weight: 100;
   text-align: center;
-  text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 .section-title {
   margin-bottom: 36px;
