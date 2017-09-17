@@ -321,10 +321,56 @@ section#portfolio .box-hover .zoom span {
   font-size: 64px;
   line-height: 48px;
 }
-section#feedback {
+section#twitter {
   width: 100%;
   padding: 80px 0 80px 0;
   background-color: #4bcaff;
+}
+section#twitter .feedback-twitter {
+  float: right;
+  border-radius: 0;
+  padding: 4px 4px;
+  background-color: transparent;
+  color: #ffffff;
+}
+section#twitter blockquote {
+  border-left: none;
+}
+section#twitter .quote-box {
+  overflow: hidden;
+  margin-top: -50px;
+  border-radius: 8px;
+  padding-top: -100px;
+  background-color: #3fb6e8;
+  margin-top: 25px;
+  color: white;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px #2f95c0;
+}
+section#twitter .quote-box .quotation-mark {
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+section#twitter .quote-box .quote-text {
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: -65px;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section#twitter .quote-box .quote-text strong {
+  font-weight: 600;
+}
+section#twitter .quote-box .quote-badge {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+section#feedback {
+  width: 100%;
+  padding: 80px 0 80px 0;
+  background-color: #ffffff;
 }
 section#feedback .feedback-twitter {
   float: right;
@@ -341,11 +387,11 @@ section#feedback .quote-box {
   margin-top: -50px;
   border-radius: 8px;
   padding-top: -100px;
-  background-color: #3fb6e8;
+  background-color: #515f67;
   margin-top: 25px;
   color: white;
   width: 100%;
-  box-shadow: 2px 2px 2px 2px #2f95c0;
+  box-shadow: 2px 2px 2px 2px #353f47;
 }
 section#feedback .quote-box .quotation-mark {
   margin-top: -10px;

@@ -364,7 +364,7 @@ section#portfolio {
     }
 }
 
-section#feedback {
+section#twitter {
     width: 100%;
     padding: 80px 0 80px 0;
     background-color: @colorprimary;
@@ -388,6 +388,54 @@ section#feedback {
         color:white;
         width: 100%;
         box-shadow: 2px 2px 2px 2px #2f95c0;
+        .quotation-mark{
+            margin-top: -10px;
+            font-weight: bold;
+            font-size:100px;
+            color:white;
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+        .quote-text{
+            color: @white;
+            font-size: 28px;
+            margin-top: -65px;
+            font-weight: 300;
+            font-family: @family;
+            strong {
+                font-weight: 600;
+            }
+        }
+        
+        .quote-badge{
+            background-color: rgba(0, 0, 0, 0.2);   
+        }
+    }
+}
+
+section#feedback {
+    width: 100%;
+    padding: 80px 0 80px 0;
+    background-color: @white;
+    .feedback-twitter {
+        float: right;
+        border-radius: 0;
+        padding: 4px 4px;
+        background-color: transparent;
+        color: @white;
+    }
+    blockquote{
+        border-left:none;
+    }
+    .quote-box{
+        overflow: hidden;
+        margin-top: -50px;
+        border-radius: 8px;
+        padding-top: -100px;
+        background-color: @color2;
+        margin-top: 25px;
+        color:white;
+        width: 100%;
+        box-shadow: 2px 2px 2px 2px @footer;
         .quotation-mark{
             margin-top: -10px;
             font-weight: bold;

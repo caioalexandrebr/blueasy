@@ -27,7 +27,7 @@
                                 <li><a href="#services">Services</li></a>
                                 <li><a href="#portfolio">Portfolio</li></a>
                                 <li><a href="#whois">About me</li></a>
-                                <li><a href="#feedback">Feedback</li></a>
+                                <li><a href="#contact">Contact</li></a>
                             </ul>
                         </div>
                     </div>
@@ -172,11 +172,13 @@
 
     <div ng-include="'view/movie.html'"></div>
 
-    <div ng-include="'view/feedback.html'"></div>
+    <div ng-include="'view/twitter.html'"></div>
     
     <section id="whois" data-speed="6" data-type="background">
         <div ng-include="'view/whois.html'"></div>
     </section>
+
+    <div ng-include="'view/feedback.html'"></div>
 
     <section id="contact">
         <div ng-include="'view/contact.html'"></div>
@@ -186,11 +188,11 @@
         <div class="container">
             <div class="footer-center">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#whois">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="footer_autor">© Caio Alexandre - <a href="https://github.com/caioalexandrebr/brandly" alt="GitHub">GitHub</a> - <a href="https://www.linkedin.comin/caioalexandrebr/" alt="Linkedin">Linkedin</a></div>                
             </div>
@@ -206,42 +208,32 @@
 <script src="src/js/menuActive.js"></script>
 <!-- background parallax -->
 <script src="src/js/parallax.js"></script>
-
+<!-- filter content -->
 <script>
     $(document).ready(function(){
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
+            if(value == "all") {
+                $('.filter').show('1000');
+            } else {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+            }
+        });
     });
-
-});
 </script>
-
+<!-- menu fixed scroll -->
 <script>
-		$(function(){   
-			var nav = $('#nav-header');   
-			$(window).scroll(function () { 
-				if ($(this).scrollTop() > 150) { 
-					nav.addClass("nav-fixed"); 
-				} else { 
-					nav.removeClass("nav-fixed"); 
-				} 
-			});  
-		});
-    </script>
-    
+    $(function(){
+        var nav = $('#nav-header');   
+        $(window).scroll(function () { 
+            if ($(this).scrollTop() > 150) { 
+                nav.addClass("nav-fixed"); 
+            } else { 
+                nav.removeClass("nav-fixed"); 
+            } 
+        });  
+    });
+</script>
 </html>
