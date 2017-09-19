@@ -49,22 +49,37 @@ header {
         z-index: 99;
         position: fixed;
     }
-    .nav-header {
+    nav#nav-header {
         width: 100%;
         height: 150px;
         background-color: @colorsecondary;
         .nav-header-center {
             width: 100%;
             height: 150px;
-            .logo {
-                color: @white;
-                font-size: 30px;
-                font-weight: @bold;
-                font-family: @family;
-                text-decoration: none;
-                text-transform: uppercase;
+            display: -moz-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            ul.logo {
+                li {
+                    list-style: none;
+                    a {
+                        color: @white;
+                        font-size: 30px;
+                        font-weight: @bold;
+                        font-family: @family;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
             }
             ul.menu {
+                display: flex;
+                flex-direction: row;
                 li {
                     list-style: none;
                     margin-left: 30px;

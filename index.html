@@ -9,37 +9,54 @@
     <link href="lib/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="src/css/main.css" rel="stylesheet" type="text/css" />
 </head>
-<body>   
-
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark top-fixed">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav   " aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-
+<body>
     
     <section id="home">
+        <header data-speed="6" data-type="background">
+            <div id="nav-header-area">
+                <div class="nav-header">
+                    <div class="container">
+                        <div class="nav-header-center">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <a class="logo" href="">Blu<font style="color: #4bcaff;">e</font>asy</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav   " aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                        
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav mr-auto menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#services">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#whois">About me</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header-footer">
+                    <div><h1>“I’m looking for the unexpected.</h1></div>
+                    <div><h2>I’m looking for things I’ve never seen before.”</h2></div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- <section id="home">
         <header data-speed="6" data-type="background">
             <div id="nav-header-area">
                 <nav id="nav-header">
@@ -68,7 +85,7 @@
                 </div>
             </div>
         </header>
-    </section>
+    </section> -->
 
     <div ng-include="'view/services.html'"></div>
 
@@ -256,7 +273,7 @@
 <!-- menu fixed scroll -->
 <script>
     $(function(){
-        var nav = $('#nav-header');   
+        var nav = $('.nav-header');   
         $(window).scroll(function () { 
             if ($(this).scrollTop() > 150) { 
                 nav.addClass("nav-fixed"); 

@@ -22,27 +22,16 @@ header .nav-fixed {
   z-index: 99;
   position: fixed;
 }
-header nav#nav-header {
+header .nav-header {
   width: 100%;
   height: 150px;
   background-color: #3f4a51;
 }
-header nav#nav-header .nav-header-center {
+header .nav-header .nav-header-center {
   width: 100%;
   height: 150px;
-  display: -moz-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
 }
-header nav#nav-header .nav-header-center ul.logo li {
-  list-style: none;
-}
-header nav#nav-header .nav-header-center ul.logo li a {
+header .nav-header .nav-header-center .logo {
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
@@ -50,15 +39,11 @@ header nav#nav-header .nav-header-center ul.logo li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-header nav#nav-header .nav-header-center ul.menu {
-  display: flex;
-  flex-direction: row;
-}
-header nav#nav-header .nav-header-center ul.menu li {
+header .nav-header .nav-header-center ul.menu li {
   list-style: none;
   margin-left: 30px;
 }
-header nav#nav-header .nav-header-center ul.menu li .active {
+header .nav-header .nav-header-center ul.menu li .active {
   padding: 6px 14px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,7 +52,7 @@ header nav#nav-header .nav-header-center ul.menu li .active {
   text-transform: uppercase;
   border: 2px solid #4bcaff;
 }
-header nav#nav-header .nav-header-center ul.menu li a {
+header .nav-header .nav-header-center ul.menu li a {
   padding: 6px 14px;
   color: #ffffff;
   font-size: 14px;
@@ -77,7 +62,7 @@ header nav#nav-header .nav-header-center ul.menu li a {
   text-transform: uppercase;
   border: 2px solid transparent;
 }
-header nav#nav-header .nav-header-center ul.menu li a:hover {
+header .nav-header .nav-header-center ul.menu li a:hover {
   color: #4bcaff;
   border: 2px solid #4bcaff;
 }
@@ -117,8 +102,8 @@ header .header-footer h2 {
   margin-bottom: 36px;
   color: #ffffff;
   font-size: 30px;
-  font-weight: 300;
   line-height: 40px;
+  font-weight: 300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
@@ -159,15 +144,15 @@ section#services .service-area .service-ico {
 section#services .service-area h1 {
   color: #ffffff;
   font-size: 24px;
-  font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
 }
 section#services .service-area h2 {
   color: #ffffff;
   font-size: 12px;
-  font-weight: 600;
   line-height: 18px;
+  font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 section#portfolio {
@@ -182,6 +167,7 @@ section#portfolio .portfolio-bt button {
   margin-left: 30px;
   background-color: transparent;
   border: 2px solid transparent;
+  font-size: 14px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
@@ -243,10 +229,10 @@ section#movie {
 }
 section#movie .movie-left h2 {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
   line-height: 22px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 section#movie .movie-left button {
   border-radius: 0;
@@ -254,6 +240,7 @@ section#movie .movie-left button {
   padding: 10px 40px 10px 40px;
   background-color: transparent;
   color: #353f46;
+  font-size: 14px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
@@ -285,8 +272,8 @@ section#twitter blockquote {
 section#twitter .quote-box {
   overflow: hidden;
   margin-top: -50px;
+  padding: 0px 20px;
   border-radius: 8px;
-  padding-top: -100px;
   background-color: #3fb6e8;
   margin-top: 25px;
   color: white;
@@ -324,17 +311,17 @@ section#whois {
 }
 section#whois .whois-left h1 {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
   line-height: 22px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 section#whois .whois-right h1 {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
   line-height: 22px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 section#whois .whois-right button {
   border-radius: 0;
@@ -385,8 +372,8 @@ section#feedback blockquote {
 section#feedback .quote-box {
   overflow: hidden;
   margin-top: -50px;
+  padding: 0px 20px;
   border-radius: 8px;
-  padding-top: -100px;
   background-color: #515f67;
   margin-top: 25px;
   color: white;
@@ -431,14 +418,14 @@ section#contact h1 {
 }
 section#contact p {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
   line-height: 22px;
+  font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 section#contact .contact-input {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 60px;
@@ -463,6 +450,7 @@ section#contact button {
   width: 100%;
   background-color: #4bcaff;
   color: #ffffff;
+  font-size: 14px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
