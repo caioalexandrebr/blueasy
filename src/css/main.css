@@ -9,10 +9,10 @@ header {
 }
 header #nav-header-area {
   width: 100%;
-  height: 150px;
+  min-height: 100px;
 }
 header .nav-fixed {
-  height: 75px !important;
+  min-height: 100px !important;
   display: -moz-box !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -24,12 +24,15 @@ header .nav-fixed {
 }
 header .nav-header {
   width: 100%;
-  height: 150px;
+  min-height: 100px;
   background-color: #3f4a51;
 }
 header .nav-header .nav-header-center {
   width: 100%;
-  height: 150px;
+  min-height: 100px;
+}
+header .nav-header .nav-header-center .navbar {
+  min-height: 100px;
 }
 header .nav-header .nav-header-center .logo {
   color: #ffffff;
@@ -61,6 +64,7 @@ header .nav-header .nav-header-center ul.menu li a {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid transparent;
+  background-color: #3f4a51;
 }
 header .nav-header .nav-header-center ul.menu li a:hover {
   color: #4bcaff;
